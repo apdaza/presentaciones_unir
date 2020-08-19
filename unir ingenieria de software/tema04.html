@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+  </head>
+  <body>
+    <textarea id="source">
+      name: inverse
+      layout: true
+      class: center, middle, inverse
+      ---
+      template: inverse
+      # Comprensión de los requisitos
+      ***
+      ---
+      layout: false
+      # Comprensión de los requisitos
+      ***
+
+      ## Contenidos
+      1. Ingeniería de requisitos
+      2. Establecer las bases
+      3. Indagación de los requisitos
+      4. Desarrollo de casos de uso
+      5. Elaboración del modelo de los requisitos
+      6. Negociación de los requisitos
+      7. Validación de los requisitos
+      8. Referencias
+      
+      
+      
+
+      ---
+      ![RN](./media/tema04/esquema.png)
+      ---
+      # 1. Ingeniería de requisitos
+
+      La ingeniería de requisitos engloba el conjunto de tareas y técnicas que facilitan la comprensión de los requisitos que debe cumplir el software.
+
+      Está compuesta por siete tareas, algunas de las cuales se desarrollan en paralelo:
+ 
+      - Concepción.
+      - Indagación.
+      - Elaboración.
+      - Negocoación.
+      - Especificación.
+      - Validación.
+      - Administración.
+
+      ![RN](./media/tema04/tareas_requerimientos.png)
+      ---
+      # 2. Establecer las bases
+
+      En primer lugar, será necesario identificar a los ___participantes___ que se beneficiarán directa o indirectamente del sistema a desarrollar. 
+      
+      Cada participante aportará ___su punto de vista___ de los requisitos, que pueden llegar a ser inconsistentes o estar en conflicto unas con otras. 
+      
+      > El ingeniero de requisitos deberá identificar las áreas de interés común y las de conflicto para los diferentes participantes.
+      
+      ***
+      Para iniciar la comunicación con los participantes se deberá comenzar con una serie de preguntas libres del contexto.
+      
+      Posteriormente unas preguntas que permitan conocer mejor el problema. 
+      
+      Finalmente, preguntas para conocer la eficacia de la comunicación establecida.
+      ***
+
+      ---
+      # 3. Indagaciones de los requisitos
+
+      Se deberá ___recabar información de forma colaborativa___ para identificar el problema, proponer soluciones, valorar distintos puntos de vista y generar un conjunto inicial de requisitos.
+
+      A medida que se van recopilando los requisitos, los desarrolladores y usuarios deberán generar un ___conjunto de casos de uso___, que describirán el modo en el que se hará uso del sistema.
+      
+      ![RN](./media/tema04/funcion_calidad.png)
+
+      ---
+      # 4. Desarrollo de casos de uso
+
+      ![RN](./media/tema04/casos_uso.png)
+
+      La primera tarea a realizar será identificar los distintos actores, que serán entidades externas (normalmente personas, pero no siempre) que desempeñan un rol en el caso de uso.
+
+      En un diagrama UML de caso de uso, los actores se conectan mediante líneas a los casos de uso, que se representan como óvalos. A continuación, se muestra el ejemplo presentado en este capítulo del libro.
+
+      ---
+      # 4. Desarrollo de casos de uso
+
+      ![RN](./media/tema04/diagrama_casos_uso.png)
+
+      ---
+      # 5. Elaboración del modelo de los requisitos
+
+      ***
+      El modelo de los requisitos debe describir la ___información___, ___funcionalidad___ y ___comportamiento necesarios___ para nuevo sistema.
+      ***
+
+      Los elementos del modelo de requisitos pueden ser: 
+      - ___basados en el escenario___ (casos de uso).
+      - ___basados en clases___ (diagrama de clases).
+      - ___de comportamiento___ (diagrama de estados). 
+      - ___de flujo___ (diagrama de flujo de datos).
+
+      ---
+      # 6. Negociación de los requisitos
+
+      En ocasiones la determinación de los requisitos del cliente requiere la ___negociación con los participantes___ para que valoren la funcionalidad del sistema en contraste con el coste y tiempo necesarios para su desarrollo. 
+      
+      > Estas negociaciones deben estar orientadas a que ambas partes salgan ganadoras.
+
+      ---
+      # 7. Validación de los requisitos
+
+      Los distintos elementos que se elaboren del modelo de requisitos deben revisarse para detectar ___inconsistencias___, ___omisiones___ o ___ambigüedades___.
+      
+      ---
+      # 8. Referencias
+      
+      - Pressman, R. (2010). Ingeniería del software (7ª ed.). México: McGrawHill.
+      
+      
+      
+
+
+    </textarea>
+    <script src="scripts/remark.js"></script>
+    <script>
+       var slideshow = remark.create();
+    </script>
+  </body>
+</html>

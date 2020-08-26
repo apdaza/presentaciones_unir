@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+  </head>
+  <body>
+    <textarea id="source">
+      name: inverse
+      layout: true
+      class: center, middle, inverse
+      ---
+      template: inverse
+      # Modelado de los requisitos: 
+      ## escenarios, información y clases de análisis
+      ***
+      ---
+      layout: false
+      # Modelado de los requisitos: 
+      ## escenarios, información y clases de análisis
+      ***
+
+      ## Contenidos
+      1. Análisis de los requisitos
+      2. Modelado basado en escenarios
+      3. Modelos UML que proporcionan el caso de uso
+      4. Conceptos de modelado de datos
+      5. Modelado basado en clases
+      6. Diagramas de clases
+      7. Referencias
+      
+      ---
+      ![RN](./media/tema05/esquema.png)
+      ---
+      # 1. Análisis de los requisitos
+
+      El modelado de requisitos puede ser:
+      
+      - Modelado basado en el ___escenario de los requisitos___: centrándose en los actores del sistema a modelar.
+      
+      - Modelado de ___datos___: desde el punto de vista de la información del sistema.
+      
+      - Modelado ___orientado a clases___: para modelar basándose en el paradigma orientado a objetos. Representa a las clases del sistema, con sus atributos y métodos, y las interacciones entre ellas.
+      
+      - Modelado ___orientado al flujo___: representan las funcionalidades del sistema y la transformación que realizan de los datos.
+      
+      - Modelado del ___comportamiento___: muestra el comportamiento del sistema en base a eventos externos.
+      
+      ---
+      # 1. Análisis de los requisitos
+      
+      > La fase de análisis y modelado de requisitos se centra _«¿qué hay que hacer?»_. La fase de diseño tratará el _«¿cómo hay que hacerlo?»_.
+
+      Durante el análisis de requisitos se debe lograr tres objetivos:
+
+      1.	Describir lo que quiere el cliente
+      2.	Establecer una base para el posterior diseño del software
+      3.	Definir el conjunto de requisitos que habrá que validar una vez construido el software.
+
+      ![RN](./media/tema05/analisis_requisitos.png)
+
+      ---
+      # 2. Modelado basado en escenarios
+
+      El modelado de requisitos basado en escenarios tiene como objetivo representar ___cómo desea interactuar el usuario final con el sistema___.
+      
+      Para llevarlo a cabo:
+      
+      -	Se crean los casos de uso preliminares. Cada uno de ellos, define una funcionalidad del sistema, identificando, por un lado, a los actores implicados y, por otro lado, enumerando las características que debe cumplir esa funcionalidad.
+      
+      -	Se refina cada caso de uso preliminar. Se analiza en profundidad cada caso de uso para identificar escenarios adicionales, condiciones de error y comportamientos alternativos.
+      
+      -	Se escriben formalmente los casos de uso con al menos el siguiente contenido: actor principal y actores secundarios, objetivo, precondiciones, lista de características del escenario, excepciones y prioridad.
+      
+      ---
+      # 2. Modelado basado en escenarios
+
+      - Se representan gráficamente los casos de uso con diagramas UML de casos de uso.
+
+      ![RN](./media/tema05/casos_uso_casa_segura.png)
+
+      ---
+      # 3. Modelos UML que proporcionan el caso de uso
+      .img-column[
+        ![RN](./media/tema05/actividades01_reducida.png)
+      ]
+      .desc-column[
+      Los diagramas de actividades enriquecen la información del caso de uso:
+      
+      - __Diagramas de actividades:__ representa el flujo de interacción dentro del escenario.
+      ]
+      ---
+      ![reducida](./media/tema05/actividades01.png)
+      ---
+      # 3. Modelos UML que proporcionan el caso de uso
+      .img-column[
+        ![RN](./media/tema05/actividades02_reducida.png)
+      ]
+      .desc-column[
+      - __Diagramas de actividades con canal:__ es un diagrama de actividad que añade información sobre el actor responsable de cada acción.
+      ]
+      ---
+      ![reducida](./media/tema05/actividades02.png)
+      ---
+      # 4. Conceptos del modelado de datos
+
+      - __Modelado de datos:__ define los ___objetos de datos___ que se procesan en el sistema, los ___atributos___ que tiene y las ___relaciones___ entre ellos.
+
+      - __Objeto de datos:__ Es una ___representación de la información compuesta por atributos___ que permiten identificar la instancia, describir la instancia o hacer referencia a otra instancia de datos.
+
+      >> Los objetos de datos se interconectan entre sí mediante las relaciones.
+
+      - Los ___diagramas Entidad-Relación___ permiten modelar los objetos de datos, sus atributos y sus relaciones.
+
+      ---
+      # 5. Modelado basado en clases
+
+      - __Modelado basado en clases:__ Representa las ___clases del sistema___, identificando sus datos (atributos) y operaciones (métodos), así como las interrelaciones entre ellas.
+      
+      El modelado de clases sigue los siguientes pasos:
+
+      -	___Identificación de las clases___, para lo que se analiza los casos de uso y se identifican los diferentes sustantivos. Posteriormente, de estos sustantivos, habrá que identificar los que realmente representan a clases del sistema, que pueden ser entidades externas, cosas, eventos, roles, unidades organizativas, lugares, estructuras, etc.
+
+      -	___Identificación de los atributos___ de la clase con aquellos elementos que pertenezcan a la clase.
+
+      ---
+      # 5. Modelado basado en clases
+
+      -	___Identificación de los métodos___ de la clase con las operaciones que definen el comportamiento de la clase.
+
+      -	___Identificación de las relaciones___ entre las diferentes clases para representar jerarquías, relaciones, asociaciones, agregaciones y dependencias.
+
+      Si el sistema a modelar es muy grande, para facilitar su manejo, se pueden agrupar las clases en paquetes.
+
+      ---
+      # 6. Diagramas de clases
+
+      Para modelar las clases (con sus atributos y operaciones) y las relaciones y asociaciones con otras clases se utilizan los diagramas UML de clases.
+      
+      Cada clase se representa con una caja compuesta de tres partes:
+      
+      - Nombre
+      - Atributos
+      - Operaciones
+
+      ![RN](./media/tema05/clase.png)
+      
+
+      ---
+      # 6. Diagramas de clases
+      
+      - ___La relación de generalización o herencia___ se representa mediante una flecha con una punta triangular hueca que apunta al padre (o superclase).
+
+      - ___La relación de asociación___ se representa mediante una línea que una a ambas clases. Si se pone una flecha en uno de los extremos, se indica que la relación es solamente en uno de los sentidos. También se puede indicar la multiplicidad de esta relación con un número o un rango de números.
+      
+      - ___La relación de dependencia___ se representa con una línea punteada indicando que cambios en una de ellas puede suponer cambios en la otra.
+      
+      - ___La relación de agregación___ se representa mediante un rombo hueco indicando la relación todo/parte.
+      
+      - ___La relación de composición___ es una relación de agregación que indica dependencia total de las partes con respecto al todo y se representa mediante un rombo relleno.
+      
+      ---
+      # 7. Referencias
+      
+      - Pressman, R. (2010). Ingeniería del software (7ª ed.). México: McGrawHill.
+      
+
+      
+
+    </textarea>
+    <script src="scripts/remark.js"></script>
+    <script>
+       var slideshow = remark.create();
+    </script>
+  </body>
+</html>

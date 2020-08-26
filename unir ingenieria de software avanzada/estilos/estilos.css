@@ -122,6 +122,15 @@ code {
   padding-top: 1em;
 }
 
+.img-column {
+  width: 50%;
+  float: right;
+}
+.text-column {
+  width: 45%;
+  float: left;
+}
+
 img {
   max-width: 100%;
   display: block;

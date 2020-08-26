@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+  </head>
+  <body>
+    <textarea id="source">
+      name: inverse
+      layout: true
+      class: center, middle, inverse
+      ---
+      template: inverse
+      # Modelado de los requisitos: 
+      ## flujo, comportamiento y patrones
+      ***
+      ---
+      layout: false
+      # Modelado de los requisitos: 
+      ## flujo, comportamiento y patrones
+      ***
+
+      ## Contenidos
+      1. Requisitos que modelan las estrategias
+      2. Modelado orientado al flujo
+      3. Diagramas de estado
+      4. Creación de un modelo de comportamiento
+      5. Diagramas de secuencia
+      6. Diagramas de comunicación
+      7. Patrones para el modelado de requisitos
+      8. Referencias
+      
+      
+      ---
+      ![RN](./media/tema06/esquema.png)
+      ---
+      # 1. Requisitos que modelan las estrategias
+
+      - El análisis estructurado modela los datos y sus procesos como entidades independientes. 
+      
+      - El análisis orientado a objetos se centra en el modelado de las clases y sus interrelaciones.
+      
+      ---
+      # 2. Modelado orientado al flujo
+
+      ![RN](./media/tema06/DFD01.png)
+      .desc-column[
+      - Se define un diagrama de nivel 0 (o de contexto) que representa al sistema como un todo, representando las entradas y salidas que tendrá.
+      ]
+      .img-column[
+      ![RN](./media/tema06/diagrama_nivel01.png)
+      ]
+
+      ---
+      # 2. Modelado orientado al flujo
+
+      .desc-column[
+      - Posteriormente se van definiendo los diagramas de los siguientes niveles que van aumentando el nivel de detalle del sistema.
+      ]
+      .img-column[
+      ![RN](./media/tema06/diagrama_nivel02.png)
+      ]
+
+      ---
+      # 3. Diagramas de estado
+
+      - Los ___diagramas de estado___ permiten ___modelar el flujo de control del sistema___ definiendo los estados y las transacciones entre dichos estados por los que pasará un objeto.
+      
+      ![RN](./media/tema06/diagrama_estado.png)
+      
+      ---
+      # 4. Creación de un modelo de comportamiento
+
+      El modelo de comportamiento indica la forma en la que responderá el software a eventos externos. 
+      
+      Para generarlo se deberán seguir los siguientes pasos:
+      
+      1.	Evaluar los casos de uso.
+
+      2.	Identificar los eventos que desencadenan las interacciones entre objetos.
+      
+      3.	Crear una secuencia para cada caso de uso.
+      
+      4.	Construir el diagrama de estado para el sistema.
+      
+      5.	Revisar el modelo de comportamiento.
+
+      ---
+      # 5. Diagramas de secuencia
+
+      Diagrama que ___modela las comunicaciones entre objetos___ para la ejecución de una tarea, mostrando el orden temporal de ejecución de los mensajes.
+      
+      ![RN](./media/tema06/diagrama_secuencia.png)
+
+      ---
+      # 6. Diagramas de comunicación
+
+      .desc-column[
+      Al igual que el diagrama de secuencia, el diagrama de comunicación modela las comunicaciones entre objetos para la ejecución de una tarea, mostrando el orden temporal de ejecución de los mensajes.
+      ]
+      .img-column[
+      ![RN](./media/tema06/diagrama_comunicaciones.png)
+      ]
+
+      ---
+      # 7. Patrones para el modelado de requisitos
+
+      - Los ___patrones de software___ contienen conocimiento que permite su aplicación cuando se encuentre un problema similar. 
+      
+      - Los patrones que se descubren deben ser documentados identificando el problema al que es aplicable, la solución, las suposiciones y las restricciones de uso del patrón.
+      
+      ---
+      # 8. Referencias
+      
+      - Pressman, R. (2010). Ingeniería del software (7ª ed.). México: McGrawHill.
+      
+      - Thompson, J. (2019 ). Gang of Four Design Patterns. Recuperado de: https://springframework.guru/gang-of-four-design-patterns/ 
+      
+
+    </textarea>
+    <script src="scripts/remark.js"></script>
+    <script>
+       var slideshow = remark.create();
+    </script>
+  </body>
+</html>

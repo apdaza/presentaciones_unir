@@ -12,6 +12,9 @@ h1, h2, h3 {
   font-weight: 400;
   margin-bottom: 0;
 }
+
+
+
 .remark-slide-content {
   background-image:url("../media/logo_unir_blanco.png");
   background-position:0px 630px;
@@ -22,6 +25,8 @@ h1, h2, h3 {
 .remark-slide-content h1 { font-size: 3em; color:#0098cd;}
 .remark-slide-content h2 { font-size: 2em; color:#0098cd;}
 .remark-slide-content h3 { font-size: 1.6em; color:#0098cd;}
+
+.remark-slide-content p i { font-size: 1.6em; color:#0098cd;}
 .footnote {
   position: absolute;
   bottom: 3em;
@@ -161,12 +166,16 @@ table {
 }
 th, td {
    text-align: left;
+   font-size: 0.7em;
    vertical-align: top;
    border: 1px solid #000;
    border-collapse: collapse;
    padding: 0.3em;
    caption-side: bottom;
+   background: #fff;
 }
 th {
    background: #eee;
 }
+
+i {color: #0098cd; }

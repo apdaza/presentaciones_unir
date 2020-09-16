@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+  </head>
+  <body>
+    <textarea id="source">
+      name: inverse
+      layout: true
+      class: center, middle, inverse
+      ---
+      template: inverse
+      # Diseño de la arquitectura
+      ***
+      ---
+      layout: false
+      # Diseño de la arquitectura
+      ***
+
+      ## Contenidos
+      1. Arquitectura del software
+      2. Géneros arquitectónicos
+      3. Estilos arquitectónicos
+      4. Diseño arquitectónico
+      5. Evolución de los diseños alternativos para la arquitectura
+      6. Mapeo de la arquitectura con el uso del flujo de datos
+      7. Referencias
+            
+      ---
+      ![RN](./media/tema08/esquema.png)
+      ---
+      # 1. Arquitectura del software
+
+      La arquitectura del software proporciona una ___visión del sistema a construir___: 
+      - estructura y organización de los componentes.
+      - sus propiedades.
+      - conexiones.
+      
+      La arquitectura del software permite analizar la efectividad del diseño para cumplir los requisitos establecidos, considerar alternativas arquitectónicas, reducir riesgos asociados con la construcción del software y facilita la comunicación entre todos los participantes en el desarrollo del software.
+      
+      ---
+      # 2. Géneros arquitectónicos
+      
+      El género arquitectónico dicta el enfoque específico para el software a construir. Algunos géneros arquitectónicos son: 
+      - inteligencia artificial
+      - comunicaciones
+      - contenido de autor
+      - entretenimiento
+      - financiero
+      - medicina
+      - militar
+      - sistemas operativos
+      - utilidades
+      - etc.
+      
+      
+      ---
+      # 3. Estilos arquitectónicos
+      
+      La mayoría de los sistemas se pueden clasificar en alguna de las siguientes tipologías de estilos arquitectónicos:
+      
+      - Arquitecturas centradas en los datos.
+      
+      - Arquitecturas de flujo de datos.
+      
+      - Arquitecturas de llamada y retorno:
+       - Arquitectura de programa principal y subprogramas.
+       - Arquitectura de llamada a procedimiento remoto.
+      
+      - Arquitecturas orientadas a objetos.
+      
+      - Arquitecturas en capas.
+
+      - Arquitecturas orientadas a servicios.
+      
+      ---
+      # 4. Diseño arquitectónico
+      
+      El diseño arquitectónico del sistema se debe realizar en su contexto en el que interactuará con los diferentes actores y con sistemas que pueden ser superiores, subordinados o iguales. 
+      
+      La comunicación con cada una de estas entidades externas se realiza mediante una interfaz.
+      
+      ![reducida](./media/tema08/interfaces.png)
+
+      ---
+      # 4. Diseño arquitectónico
+
+      En el diseño de la arquitectura del sistema se representan los arquetipos, que son clases o patrones que representan abstracciones de importancia crítica.
+
+      ![RN](./media/tema08/arquetipos.png)
+
+      ---
+      # 4. Diseño arquitectónico
+      
+      El diseño de la arquitectura se debe ir refinando hacia los componentes que constituirán el sistema.
+
+      ![RN](./media/tema08/refinamiento.png)
+
+      ---
+      # 5. Evaluación de los diseños alternativos para la arquitectura
+
+      El diseño da como resultado varias alternativas de arquitectura que deben ser evaluadas para determinar cuál es la más adecuada para resolver el problema. Para esta evaluación se puede utilizar:
+
+      - ___Método de la negociación para analizar la arquitectura___, en el que de forma iterativa:
+       - Se desarrolla el conjunto de casos de uso del sistema.
+       - Se obtienen los requisitos, restricciones y descripción del entorno.
+       - Se describen los estilos o patrones arquitectónicos.
+       - Se evalúa independientemente cada atributo de calidad: fiabilidad, seguridad, mantenibilidad, portabilidad, etc.
+       - Identificación de la criticidad de los atributos de calidad.
+       - Crítica de las arquitecturas candidatas.
+
+      ---
+      # 5. Evaluación de los diseños alternativos para la arquitectura
+ 
+      - ___Complejidad arquitectónica___: evalúa la complejidad de la arquitectura en base a las dependencias de flujo de información o de control de los componentes.
+
+      ---
+      # 6. Mapeo de la arquitectura con el uso del flujo de datos
+
+      El diseño estructurado propone la transición del Diagrama de Flujo de Datos (DFD) del sistema a la arquitectura software con los siguientes pasos: 
+
+      1.	Se establece el tipo de flujo de información.
+      2.	Se determinan las fronteras del flujo.
+      3.	Se mapea el DFD en la estructura del programa.
+      4.	Se define la jerarquía de control.
+      5.	Se refina la estructura resultante.
+      6.	Se elabora la descripción arquitectónica.
+
+      ---
+      # 7. Referencias
+
+      - Pressman, R. (2010). Ingeniería del software (7ª ed.). México: McGrawHill.
+
+
+      
+    </textarea>
+    <script src="scripts/remark.js"></script>
+    <script>
+       var slideshow = remark.create();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+  </head>
+  <body>
+    <textarea id="source">
+      name: inverse
+      layout: true
+      class: center, middle, inverse
+      ---
+      template: inverse
+      # Patrones de diseño de software
+      ***
+      ---
+      layout: false
+      # Patrones de diseño de software
+      ***
+
+      ## Contenidos
+      1. Patrones de diseño	
+      2. Patrones arquitectónicos
+      3. Patrones de diseño de componentes	
+      4. Patrones de diseño de interfaz de usuario
+      5. Referencias bibliográficas	
+         
+      ---
+      ![RN](./media/tema10/esquema.png)
+      
+      ---
+      # 1. Patrones de diseño	
+
+      Un patrón de diseño contiene la solución probada a un problema en un determinado contexto.
+
+      Para poder considerar una solución como un ___patrón de diseño___ deben darse al menos dos características (Polo Usaola, 2012):
+
+      - ___Debe ser repetible___, habiendo mostrado su efectividad en más de una ocasión. Por tanto, la solución no solo debe resultar válida para una tecnología o problema de un dominio de aplicación concreto.
+      
+      - ___Su descripción debe ser los suficientemente genérica___ como para que pueda ser aplicado en contextos tecnológicos diversos.
+
+      En términos generales, los patrones de diseño persiguen ___aumentar la cohesión___ y ___reducir el acoplamiento___ de los sistemas, favoreciendo prácticas deseables como la ___reutilización de software___.
+
+      Tal es la importancia que cobran los patrones de diseño, como técnica de reutilización de software y resolución rápida de problemas habituales, que este tipo de conocimiento es recopilado y publicado en diferentes manuales y catálogos. 
+      
+      ---
+      # 1. Patrones de diseño	
+
+      Estructura de los catálogos de los patrones:
+
+      - ___Nombre del patrón___, generalmente en inglés.
+      
+      - ___Clasificación del patrón___ (de creación, de estructura o de comportamiento).
+      
+      - Intención o ___descripción del problema___ que intenta resolver.
+      
+      - ___Motivación___ o explicación de escenarios prácticos que justifican la posible aplicación del patrón.
+      
+      - ___Estructura___, empleando diagramas de clases que representan los objetos que intervienen en el patrón y sus relaciones.
+      
+      -	___Consecuencias___ positivas y negativas de su empleo.
+      
+      -	___Implementación___, ofreciendo indicaciones para ello.
+      
+      ---
+      # 1. Patrones de diseño	
+
+      -	___Código de ejemplo___, a veces en diferentes lenguajes como demostración.
+      
+      -	___Usos conocidos___, dando ejemplos de sistemas reales que lo aplican.
+      
+      -	___Patrones relacionados___, indicando los nombres de otros patrones con los que presenta similitudes, o con los que es posible combinarlo.
+
+      El más conocido y antiguo de estos catálogos es el de Gamma, Helm, Johson y Vlissides (Patrones de Gamma o Patrones GoF), que publicaron una primera versión de su libro, Design Patterns, en 1994.
+
+      Periódicamente, se celebran conferencias en todo el mundo sobre esta temática. Las más importantes son las Pattern Languages of Programs (PLoP), un grupo de conferencias anuales que se celebran en todo el mundo. 
+      
+      La principal de ellas se celebra anualmente en Estados Unidos, pero también existen otras ediciones, ya sea centradas en áreas geográficas concretas (AsianPLoP, EuroPLoP o KoalaPLoP) o en temáticas específicas (ScrumPLoP o ChilliPLoP).
+
+      ---
+      # 1. Patrones de Diseño
+      
+      ## Tipos de patrones
+      
+      ### Patrones de creación
+      
+      Los patrones de creación o creacionales abstraen la forma en la que se crean los objetos, permitiendo tratar las clases a crear de forma genérica dejando para más tarde la decisión de qué clases crear o cómo crearlas.
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+      
+      ### Patrones de creación
+
+      - **Abstract Factory:** Proporciona una interfaz para crear familias de objetos o que dependen entre sí, sin especificar sus clases concretas.
+      
+      ![abstract factory](./media/tema10/abstractfactory.png)
+      
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+      
+      ### Patrones de creación
+
+      - **Builder:** Separa la construcción de un objeto complejo de su representación, de forma que el mismo proceso de construcción pueda crear diferentes representaciones.
+
+      ![builder](./media/tema10/builder.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+      
+      ### Patrones de creación
+
+      - **Factory Method:** Define una interfaz para crear un objeto, pero deja que sean las subclases quienes decidan qué clase instanciar. Permite que una clase delegue en sus subclases la creación de objetos.
+
+      ![factory method](./media/tema10/factorymethod.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+      
+      ### Patrones de creación
+
+      - **Prototype:** Especifica los tipos de objetos a crear por medio de una instancia prototípica, y crear nuevos objetos copiando este prototipo.
+
+      ![prototype](./media/tema10/prototype.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+      
+      ### Patrones de creación
+
+      - **Singleton:** Garantiza que una clase sólo tenga una instancia, y proporciona un punto de acceso global a ella.
+
+      ![singleton](./media/tema10/singleton.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones estructurales
+
+      Tratan de conseguir que cambios en los requisitos de la aplicación no ocasionen cambios en las relaciones entre los objetos. Lo fundamental son las relaciones de uso entre los objetos, y, éstas están determinadas por las interfaces que soportan los objetos.
+
+      Estudian como se relacionan los objetos en tiempo de ejecución. Sirven para diseñar las interconexiones entre los objetos.
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones estructurales
+
+      - **Adapter:** Convierte la interfaz de una clase en otra distinta que es la que esperan los clientes. Permiten que cooperen clases que de otra manera no podrían por tener interfaces incompatibles.
+
+      ![adapter](./media/tema10/adapter.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones estructurales
+
+      - **Bridge:** Desvincula una abstracción de su implementación, de manera que ambas puedan variar de forma independiente.
+
+      ![bridge](./media/tema10/bridge.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones estructurales
+
+      - **Composite:** Combina objetos en estructuras de árbol para representar jerarquías de parte-todo. Permite que los clientes traten de manera uniforme a los objetos individuales y a los compuestos.
+
+      ![composite](./media/tema10/composite.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones estructurales
+
+      - **Decorator:** Añade dinámicamente nuevas responsabilidades a un objeto, proporcionando una alternativa flexible a la herencia para extender la funcionalidad.
+
+      ![decorator](./media/tema10/decorator.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones estructurales
+
+      - **Facade:** Proporciona una interfaz unificada para un conjunto de interfaces de un subsistema. Define una interfaz de alto nivel que hace que el subsistema se más fácil de usar.
+
+      ![facade](./media/tema10/facade.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones estructurales
+
+      - **Flyweight:** Usa el compartimiento para permitir un gran número de objetos de grano fino de forma eficiente.
+
+      ![flyweight](./media/tema10/flyweight.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones estructurales
+
+      - **Proxy:** Proporciona un sustituto o representante de otro objeto para controlar el acceso a éste.
+
+      ![proxy](./media/tema10/proxy.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones de comportamiento
+
+      Los patrones de comportamiento estudian las relaciones entre llamadas entre los diferentes objetos, normalmente ligados con la dimensión temporal.
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones de comportamiento
+
+      - **Chain of Responsibility:** Evita acoplar el emisor de una petición a su receptor, al dar a más de un objeto la posibilidad de responder a la petición. Crea una cadena con los objetos receptores y pasa la petición a través de la cadena hasta que esta sea tratada por algún objeto.
+
+      ![chain of responsibility](./media/tema10/chainofresponsibility.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones de comportamiento
+
+      - **Command:** Encapsula una petición en un objeto, permitiendo así parametrizar a los clientes con distintas peticiones, encolar o llevar un registro de las peticiones y poder deshacer la operaciones.
+
+      ![command](./media/tema10/command.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones de comportamiento
+
+      - **Interpreter:** Dado un lenguaje, define una representación de su gramática junto con un intérprete que usa dicha representación para interpretar las sentencias del lenguaje.
+
+      ![interpreter](./media/tema10/interpreter.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones de comportamiento
+
+      - **Iterator:** Proporciona un modo de acceder secuencialmente a los elementos de un objeto agregado sin exponer su representación interna.
+
+      ![iterator](./media/tema10/iterator.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones de comportamiento
+
+      - **Mediator:** Define un objeto que encapsula cómo interactúan un conjunto de objetos. Promueve un bajo acoplamiento al evitar que los objetos se refieran unos a otros explícitamente, y permite variar la interacción entre ellos de forma independiente.
+
+      ![mediator](./media/tema10/mediator.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones de comportamiento
+
+      - **Memento:** Representa y externaliza el estado interno de un objeto sin violar la encapsulación, de forma que éste puede volver a dicho estado más tarde.
+
+      ![memento](./media/tema10/memento.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones de comportamiento
+
+      - **Observer:** Define una dependencia de uno-a-muchos entre objetos, de forma que cuando un objeto cambia de estado se notifica y actualizan automáticamente todos los objetos.
+
+      ![observer](./media/tema10/observer.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones de comportamiento
+
+      - **State:** Permite que un objeto modifique su comportamiento cada vez que cambia su estado interno. Parecerá que cambia la clase del objeto.
+
+      ![state](./media/tema10/state.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones de comportamiento
+
+      - **Strategy:** Define una familia de algoritmos, encapsula uno de ellos y los hace intercambiables. Permite que un algoritmo varíe independientemente de los clientes que lo usan.
+
+      ![strategy](./media/tema10/strategy.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones de comportamiento
+
+      - **Template Method:** Define en una operación el esqueleto de un algoritmo, delegando en las subclases algunos de sus pasos. Permite que las subclases redefinan ciertos pasos del algoritmo sin cambiar su estructura.
+
+      ![templatemethod](./media/tema10/templatemethod.png)
+
+      ---
+      # 1. Patrones de Diseño	
+      
+      ## Tipos de patrones
+
+      ### Patrones de comportamiento
+
+      - **Visitor:** Representa una operación sobre los elementos de una estructura de objetos. Permite definir una nueva operación sin cambiar las clases de los elementos sobre los que opera.
+
+      ![visitor](./media/tema10/visitor.png)
+
+      ---
+      # 2. Patrones arquitectónicos
+
+      Los patrones arquitectónicos describen problemas de diseño que se resuelven con un enfoque estructural.
+
+      >> Los patrones arquitectónicos son una manera de «representar, compartir y reutilizar el conocimiento sobre los sistemas de software» que se manifiesta como una ___«descripción abstracta estilizada de buena práctica, que se ensayó y puso a prueba en diferentes sistemas y entornos»___. 
+
+      Algunos ejemplos de patrones arquitectónicos son: control de acceso, concurrencia, distribución, persistencia, cliente / servidor, Capas, Servicios, etc.
+      
+      ---
+      # 3. Patrones de diseño de componentes
+
+      Los ___patrones de diseño de componentes___ ofrecen soluciones probadas a uno o más subproblemas extraídos del modelo de requisitos.
+      
+      
+      ---
+      # 4. Patrones de diseño de interfaz de usuario
+      
+      Los ___patrones de diseño de interfaz___ de usuario dan soluciones contrastadas a requisitos de la interfaz de usuario de una aplicación.
+      
+      Los patrones de este tipo pertenecen a alguna de las siguientes categorías: interfaz de usuario completa, distribución de la página, formatos y datos de entrada, tablas, manipulación directa de datos, navegación, búsqueda, elementos de página o comercio electrónico.
+      
+
+      ---
+      # 5. Referencias bibliográficas
+      
+      - Design Patterns. Elements of Reusable Object-Oriented Software - Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides - Addison Wesley (GoF- Gang of Four)
+      
+      - Patrones de Diseño, Diseño de Software Orientado a Objetos - Joaquin Garcia. http://www.ingenierosoftware.com/analisisydiseno/patrones-diseno.php.
+      
+      - Patrones de diseño -  http://es.kioskea.net/contents/genie-logiciel/design-patterns.php3.
+      
+      - Introducción al diseño con patrones – Miguel Lagos Torres. http://www.elrincondelprogramador.com/default.asp?pag=articulos/leer.asp&id=29.
+      
+      - Object Oriented Desing “Software Desing Principles and Design Patters, http://www.oodesing.com
+
+      ---
+      # 5. Referencias bibliográficas
+      
+      - Hassan, Y. (2012). Patrones de diseño de interacción [Blog personal]. Recuperado de http://yusef.es/blog/2012/11/patrones-de-diseno-de-interaccion/
+
+      - Polo, M. (2012). Desarrollo de software basado en reutilización [Material docente]. Barcelona: Universitat Oberta de Catalunya. Recuperado de http://hdl.handle.net/10609/63466
+      
+      - Toxboe, A. (2018). User Interface Design Patters. Recuperado de http://ui-patterns.com/ 
+      
+      - Pressman, R. (2010). Ingeniería del software (7ª ed.). México: McGrawHill.
+
+      
+
+
+    </textarea>
+    <script src="scripts/remark.js"></script>
+    <script>
+       var slideshow = remark.create();
+    </script>
+  </body>
+</html>
